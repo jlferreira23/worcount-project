@@ -1,0 +1,16 @@
+<h1>The are {{ count }} words in your test</h1>
+
+<a href="{% url 'casa' %}">Start Again</a>
+<a href="{%url 'about' %}">About Page!</a>
+
+
+<h1>Your text:</h1>
+{{fulltext}}
+
+<h1>Word count: </h1>
+
+{% for durp, durper in sortedwords %}
+
+{{ durp }} - {{ durper }}
+<br>
+{% endfor %}
